@@ -15,9 +15,11 @@ const Table = (props) => {
             {flagNews ? 
                 <CardNews data={datumNews} setFlagNews={setFlagNews} />
                 :
-                <table className="table table-responsive table-dark table-striped w-100">
-                    <TBody data={props.data} handleClickNews={handleClickNews} />
-                </table>
+                <div className="table-responsive">
+                    <table className="table table-dark table-striped w-100">
+                        <TBody data={props.data} handleClickNews={handleClickNews} />
+                    </table>
+                </div>
             }
         </div>
     );

@@ -2,6 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Login from './views/login/Login';
 import Menu from './views/menu/Menu';
+import './App.css';
 function App() {
   return (
       <BrowserRouter>

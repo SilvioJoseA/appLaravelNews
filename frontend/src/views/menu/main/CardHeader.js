@@ -2,9 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 const CardHeader = (props) => {
     return (
-        <div className="card-header d-flex justify-content-between align-items-center">
-            <span>{props.title}</span>
-            <button className="btn btn-sm btn-danger" onClick={() => props.setFlagNews(false)}>X</button>
+        <div className="card-header d-flex justify-content-between align-items-center row">
+            <div className='col-11'>
+                <h6>{props.title}</h6>
+            </div>
+            <div className='col-1'>
+                <button className="btn btn-sm btn-danger" onClick={() => props.setFlagNews(false)}>X</button>
+            </div>
+            
         </div>
     );
 }

@@ -36,3 +36,33 @@
     transform: rotate(360deg);
   }
 }
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333; /* Color de texto principal */
+}
+
+h1, h2, h3 , h4 , h5 , h6 {
+  font-weight: bold;
+  color: #cac2c2c5; /* Color de títulos */
+}
+
+p {
+  color: #d9d2d2; /* Color de texto de cuerpo */
+}
+
+.button {
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff77; /* Color de fondo del botón */
+  color: #fff; /* Color de texto del botón */
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #0056b3; /* Cambio de color al pasar el mouse sobre el botón */
+}
