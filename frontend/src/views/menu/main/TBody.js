@@ -8,8 +8,8 @@ const TBody = (props) => {
                     {props.data.map((datum) => (
                         <tr key={datum.title}>
                             <td><img onClick={() => props.handleClickNews(datum)} src={datum.urlToImage} width="70" height="70" alt={datum.author} /></td>
-                            <td>{datum.title}</td>
-                            <td>{datum.author}</td>
+                            <td onClick={() => props.handleClickNews(datum)}>{datum.title}</td>
+                            <td onClick={() => props.handleClickNews(datum)}>{datum.author}</td>
                         </tr>
                     ))}
                 </tbody>
